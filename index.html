@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,27 +12,120 @@
       padding: 0;
       box-sizing: border-box;
     }
-    header, section, footer {
+
+    header,
+    section,
+    footer {
       padding: 20px;
       text-align: center;
     }
+
     section {
       background-color: #f8f8f8;
     }
+
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #ddd;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+    }
   </style>
 </head>
+
 <body>
-    <header>
-    <h1>Edmonton Ca2Cn 爱屯加拿大直邮中国</h1>  </header>
-    <section>
+  <header>
+    <h1>Edmonton Ca2Cn 爱屯加拿大直邮中国</h1>
+    <nav>
+      <a href="#home">首页</a>
+      <a href="#news">新闻</a>
+      <a href="#routes">路线</a>
+      <a href="#pricing">运价</a>
+      <a href="#contact">联系我们</a>
+    </nav>
+  </header>
+  <section>
     <h2>欢迎来到Ca2Cn加拿大直邮中国</h2>
     <p>食品保健品4.5刀/磅；普通衣物日用品6.5刀/磅；无附加费用，包税。
-    欢迎来电/短信咨询：5879213093
-</p>
-</section>
-    <footer>
-        <p>Contact us at: info@yourbusiness.com</p>
-      </footer>
+      欢迎来电/短信咨询：5879213093
+    </p>
+  </section>
+  <section id="news" class="container">
+    <h2>新闻</h2>
+    <p>这是新闻页面的内容...</p>
+  </section>
+  <section id="routes" class="container">
+    <h2>路线</h2>
+    <p>这是路线页面的内容...</p>
+  </section>
+  <section id="pricing" class="container">
+    <h2>运价</h2>
+    <p>这是运价页面的内容...</p>
+    <form>
+      <label for="product">产品：</label>
+      <input type="text" id="product" name="product" required>
+      <br>
+      <label for="weight">重量：</label>
+      <input type="text" id="weight" name="weight" required>
+      <br>
+      <button type="submit">提交运价</button>
+    </form>
+    <h3>运价表单</h3>
+    <table>
+      <tr>
+        <th>产品</th>
+        <th>重量</th>
+        <th>价格</th>
+      </tr>
+      <tr>
+        <td>产品1</td>
+        <td>1磅</td>
+        <td>$5.00</td>
+      </tr>
+      <tr>
+        <td>产品2</td>
+        <td>2磅</td>
+        <td>$9.00</td>
+      </tr>
+      <!-- 添加更多行 -->
+    </table>
+  </section>
+  <section id="contact" class="container">
+    <h2>联系我们</h2>
+    <p>这是联系我们页面的内容...</p>
+  </section>
+  <footer>
+    <p>Contact us at: info@yourbusiness.com</p>
+  </footer>
 </body>
 
 </html>
