@@ -1,0 +1,10 @@
+/* Your styles.css file */
+.page {
+  display: none;
+}
+
+.page.show {
+  display: block;
+}
+
+/* Add your other styles */
